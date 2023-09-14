@@ -1,5 +1,6 @@
 # el.py - dagens elpriser
 ### Jätteenkel web-scraper som hämtar dagens elpriser från elbruk.se
+#### OBS: Priserna skrivs alltid ut i hela kronor, inte öre
 
 ```py
 # Exempel
