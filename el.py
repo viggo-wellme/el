@@ -1,10 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
 
-req = requests.get("https://www.elbruk.se/timpriser-se3-stockholm")
-soup = BeautifulSoup(req.text, "html.parser")
-
-
 def get_price(soup: BeautifulSoup, _type: str) -> float:
     types = {
         "dl": 0,   # daily price
@@ -24,5 +20,3 @@ def get_price(soup: BeautifulSoup, _type: str) -> float:
     fl_price = float(str_price)/100
 
     return fl_price
-
-print(get_price(soup, "hr"))
